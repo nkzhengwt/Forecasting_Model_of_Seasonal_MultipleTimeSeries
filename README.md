@@ -1,5 +1,7 @@
 # Forecasting_Model_of_Seasonal_MultipleTimeSeries
 Forecasting Model of Seasonal Multiple Time Series on Yili std.
+# Mind map
+![](Forecasting Model of Seasonal .png)
 # Install
 Spyder_cta is developed with Python 3 and R.
 For Python 3, you can use pip to install or upgrade packages below.
@@ -42,11 +44,18 @@ Yili.Lstm('income')
 Yili.Lstm('price')
 ```
 # Examples for result
-## Portfolio
-![1](example1.png)
-## Equity progression
-![](example2.png)
-## Return histogram
-![](example3.png)
-## Weights
-![](example4.png)
+![](a1.png)
+![](a2.png)
+![](a3.png)
+![](a4.png)
+![](a5.png)
+![](a6.png)
+![](a7.png)
+![](a8.png)
+![](a9.png)
+![](a10.png)
+![](a11.png)
+![](a12.png)
+![](a13.png)
+![](a14.png)
+![](a15.png)
