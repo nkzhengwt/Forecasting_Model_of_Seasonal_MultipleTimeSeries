@@ -15,22 +15,31 @@ For R, you can use install.Package to install or upgrade packages below.
 install.Package("MTS")
 ```
 # Getting started
-- Get main.py, get_quo.py and cacu.py in the same path.
-- Keep your network connected.
+- Get main.py, yili.py and data.xlsx in the same path.
+- Keep package installed.
 - Parameter initialization.
 - Run main.py.
 # Initialization
 You can initialize spyder_cta in main.py.
 ```
-# Set startdate
-startdate = 20170101
-# Set enddate
-enddate = 20171231
-# Set coin pool that you want to backtest
-# Examples:
-# coins = ['bitcoin','ethereum','ripple'] cryptocurrency you want to backtest or
-# coins = CoinName()[:n]  top n cryptocurrency of virtual currency market
-coins=CoinNames()[:10]
+# read your own data
+data = pd.read_excel('data.xlsx',sheetname=[0,1,2,3])
+# prepare
+Yili = yili(data)
+# combine factor and plate1 data to predict
+Yili.combine_income()
+# cobing factor and plate2 data to predict
+Yili.combine_price()
+# plot and standardization
+Yili.plot_standardization()
+# feature selection
+Yili.lasso(Yili.price)
+Yili.LinearRegression(Yili.price)
+Yili.Randomforest(Yili.price)
+Yili.Randomlasso(Yili.price)
+# Lstm model to predict
+Yili.Lstm('income')
+Yili.Lstm('price')
 ```
 # Examples for result
 ## Portfolio
