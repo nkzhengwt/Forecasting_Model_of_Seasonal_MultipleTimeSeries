@@ -22,7 +22,7 @@ install.Package("MTS")
 - Parameter initialization.
 - Run main.py.
 # Initialization
-You can initialize spyder_cta in main.py.
+You can initialize in main.py.
 ```
 # read your own data
 data = pd.read_excel('data.xlsx',sheetname=[0,1,2,3])
